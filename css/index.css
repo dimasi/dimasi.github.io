@@ -2388,6 +2388,10 @@
   .textfield__addon {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-positive: 0;
+        flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     width: 45px;
     background-color: #f0efe9; }
   .textfield__addon-icon {
@@ -2395,13 +2399,15 @@
     color: #c4cbcd;
     font-size: 18px; }
   .textfield__control {
-    box-sizing: border-box;
     -ms-flex-positive: 1;
         flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     height: 45px;
     line-height: 45px;
     padding: 0 15px;
     border: 0 none;
+    border-radius: 0;
     color: #373e42;
     font-family: 'Roboto', sans-serif;
     font-size: 16px; }
@@ -2496,23 +2502,21 @@
     margin-bottom: 5px; } }
 .page-welcome {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: relative;
   overflow: hidden;
   background-color: #223b65; }
-  .page-welcome__bg-video {
-    width: 120%;
-    height: 120%;
+  .page-welcome__bg-media {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    bottom: 25%;
+    left: -5%;
+    width: 110%; }
   .page-welcome__bg {
     width: 2200px;
     height: 1467px;
     position: absolute;
     z-index: 1;
-    top: 50%;
+    top: 38%;
     left: 50%;
     margin-top: -733.5px;
     margin-left: -1100px; }
@@ -2520,13 +2524,13 @@
     width: 380px;
     height: 407px;
     position: absolute;
-    top: 50%;
+    top: 21%;
     left: 50%;
-    margin-top: -200px;
     margin-left: -190px;
     z-index: 2; }
   .page-welcome__sign-in {
     width: 180px;
+    height: 40px;
     position: absolute;
     top: 25px;
     right: 20px;
@@ -2547,19 +2551,32 @@
   .page-welcome {
     display: -ms-flexbox;
     display: flex;
+    height: 100vh;
     -ms-flex-direction: column;
         flex-direction: column;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-align: center;
         align-items: center;
-    box-sizing: border-box;
     padding: 10px; }
+    .page-welcome__bg-media {
+      height: 88%;
+      width: auto;
+      bottom: 12%; }
+    .page-welcome__bg {
+      width: 800px;
+      height: auto;
+      top: auto;
+      bottom: 0;
+      left: 50%;
+      margin-top: 0;
+      margin-left: -400px; }
     .page-welcome__sign-in {
       position: static; }
     .page-welcome__flip-panel {
       width: 300px;
-      margin-left: -150px; }
+      margin: 0;
+      position: static; }
     .page-welcome__copyright {
       position: static;
       transform: translateX(0); } }
@@ -2574,11 +2591,22 @@
       margin: 0 auto 20px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-welcome__bg-media {
+    height: 80%;
+    top: 0;
+    bottom: auto;
+    width: auto; }
+  .page-welcome__bg {
+    width: 1400px;
+    height: auto;
+    top: auto;
+    bottom: 0;
+    margin-left: -700px; }
   .page-welcome__flip-panel {
     width: 348px;
     margin-top: 0;
     margin-left: -174px;
-    top: 26.85547vh; } }
+    top: 18vh; } }
 .flip-panel {
   perspective: 814px; }
   .flip-panel__side {
@@ -2616,8 +2644,10 @@
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
+    width: 100%;
     height: 100%; }
   .flip-panel__body {
+    width: 100%;
     -ms-flex-positive: 1;
         flex-grow: 1;
     padding: 35px 30px; }
@@ -2650,11 +2680,17 @@
 
 @media screen and (max-width: 767px) {
   .login__title {
-    margin-bottom: 35px; } }
+    margin-bottom: 35px; }
+  .login__login .textfield__control, .login__pwd .textfield__control {
+    width: 215px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .login__title {
-    margin-bottom: 35px; } }
+    margin-bottom: 35px; }
+  .login__login, .login__pwd {
+    width: 308px; }
+    .login__login .textfield__control, .login__pwd .textfield__control {
+      width: 263px; } }
 .form-guard {
   display: -ms-flexbox;
   display: flex;

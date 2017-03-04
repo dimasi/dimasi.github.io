@@ -2388,6 +2388,10 @@
   .textfield__addon {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-positive: 0;
+        flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     width: 45px;
     background-color: #f0efe9; }
   .textfield__addon-icon {
@@ -2395,13 +2399,15 @@
     color: #c4cbcd;
     font-size: 18px; }
   .textfield__control {
-    box-sizing: border-box;
     -ms-flex-positive: 1;
         flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     height: 45px;
     line-height: 45px;
     padding: 0 15px;
     border: 0 none;
+    border-radius: 0;
     color: #373e42;
     font-family: 'Roboto', sans-serif;
     font-size: 16px; }
@@ -2645,10 +2651,9 @@
   position: relative; }
   .page-header__bg {
     width: 2000px;
-    margin-top: -250px;
     position: absolute;
     z-index: 1;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%); }
   .page-header__bg-video {
@@ -2789,7 +2794,6 @@
 .textarea__control {
   width: 100%;
   padding: 10px 15px;
-  box-sizing: border-box;
   height: 130px;
   resize: none;
   border: 0 none;
@@ -3112,8 +3116,7 @@
   display: block;
   text-align: center; }
 .form {
-  width: 380px;
-  box-sizing: border-box; }
+  width: 380px; }
   .form__body {
     padding: 35px 20px 0; }
   .form__title {

@@ -241,10 +241,9 @@
   position: relative; }
   .page-header__bg {
     width: 2000px;
-    margin-top: -250px;
     position: absolute;
     z-index: 1;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%); }
   .page-header__bg-video {
@@ -364,7 +363,6 @@
 
 @media screen and (max-width: 767px) {
   .section__content {
-    box-sizing: border-box;
     width: 100%;
     max-width: 473px;
     padding: 0 10px;
@@ -437,11 +435,9 @@
         justify-content: flex-end;
     padding-top: 5px; }
   .about__align-wrapper {
-    box-sizing: border-box;
     padding-right: 78px;
     width: 443px; }
   .about__skills {
-    box-sizing: border-box;
     padding: 0 30px 30px 40px; }
     .about__skills .section__title {
       padding-top: 0; }
@@ -635,7 +631,6 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
     .map__contacts-list .contacts__item {
-      box-sizing: border-box;
       width: 50%;
       margin: 10px 0;
       padding: 0 10px 0 0; }
@@ -666,7 +661,6 @@
       position: static;
       background-color: #fff;
       width: 100%;
-      box-sizing: border-box;
       padding: 30px 0 15px; }
     .map__contacts-item {
       margin: 0; }

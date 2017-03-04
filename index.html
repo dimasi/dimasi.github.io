@@ -9,11 +9,9 @@
   <link rel="apple-touch-icon" sizes="57x57" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="project"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="project"><link rel="icon" type="image/png" sizes="32x32" href="/icons-513fb071908cfb53e8bef691fe8c12b0/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/icons-513fb071908cfb53e8bef691fe8c12b0/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/icons-513fb071908cfb53e8bef691fe8c12b0/favicon-16x16.png"><link rel="shortcut icon" href="/icons-513fb071908cfb53e8bef691fe8c12b0/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-1536x2008.png"><link href="/./css/common.css" rel="stylesheet"><link href="/./css/index.css" rel="stylesheet"></head>
   <body>
     <div class="page-welcome">
-      <video class="page-welcome__bg-video" width="400" height="300" autoplay loop>
-        <source src="/videos/night.mp4">
-      </video><img class="page-welcome__bg" src="/images/night_no_bg.png">
+      <div class="page-welcome__bg-media-holder"></div><img class="page-welcome__bg" src="/images/night_no_bg.png">
       <div class="page-welcome__sign-in">
-        <button class="btn btn_w_100 btn_border_white btn_hover-bg_blue btn_xs-size_small" type="button" id="sign-in"><span class="text text_color_white text_weight_500">Авторизоваться</span></button>
+        <button class="flip-panel__front-toggler btn btn_w_100 btn_border_white btn_hover-bg_blue btn_xs-size_small" type="button"><span class="text text_color_white text_weight_500">Авторизоваться</span></button>
       </div>
       <div class="page-welcome__flip-panel flip-panel">
         <div class="flip-panel__side flip-panel__side_side_front">
@@ -39,9 +37,9 @@
             </div>
             <nav class="nav flip-panel__footer nav_layout_inline nav_spacers_white">
               <ul class="nav__list">
-                <li class="nav__item btn btn_color_blue"><a class="nav__link nav__link text text_color_white text_weight_500" href="portfolio.html">Мои работы</a></li>
-                <li class="nav__item btn btn_color_blue"><a class="nav__link nav__link text text_color_white text_weight_500" href="about.html">Обо мне</a></li>
-                <li class="nav__item btn btn_color_blue"><a class="nav__link nav__link text text_color_white text_weight_500" href="blog.html">Блог</a></li>
+                <li class="nav__item nav__item_style_button btn btn_color_blue"><a class="nav__link nav__link text text_color_white text_weight_500" href="portfolio.html">Мои работы</a></li>
+                <li class="nav__item nav__item_style_button btn btn_color_blue"><a class="nav__link nav__link text text_color_white text_weight_500" href="about.html">Обо мне</a></li>
+                <li class="nav__item nav__item_style_button btn btn_color_blue"><a class="nav__link nav__link text text_color_white text_weight_500" href="blog.html">Блог</a></li>
               </ul>
             </nav>
           </div>
@@ -49,14 +47,12 @@
         <form class="flip-panel__side flip-panel__side_side_back">
           <div class="flip-panel__content">
             <div class="flip-panel__body login"><span class="login__title heading heading_font_2 heading_size_35 heading_color_white heading_transform_uppercase">Авторизуйтесь</span>
-              <div class="login__login textfield">
-                <div class="textfield__addon"><i class="textfield__addon-icon fa fa-user"></i></div>
+              <label class="login__login textfield"><span class="textfield__addon"><i class="textfield__addon-icon fa fa-user"></i></span>
                 <input class="textfield__control" type="text" name="login" placeholder="Логин">
-              </div>
-              <div class="login__pwd textfield">
-                <div class="textfield__addon"><i class="textfield__addon-icon fa fa-key"></i></div>
+              </label>
+              <label class="login__pwd textfield"><span class="textfield__addon"><i class="textfield__addon-icon fa fa-key"></i></span>
                 <input class="textfield__control" type="password" name="pwd" placeholder="Пароль">
-              </div>
+              </label>
               <div class="form-guard">
                 <label class="form-guard__checkbox checkbox">
                   <input class="checkbox__control" type="checkbox" name="antibot">
@@ -81,14 +77,14 @@
             </div>
             <nav class="nav flip-panel__footer nav_layout_inline nav_spacers_white">
               <ul class="nav__list">
-                <li class="nav__item nav__item_width_50 nav__item_xs-width_auto btn btn_color_blue"><a class="nav__link nav__link text text_color_white text_weight_500" href="#welcome-backflip">На главную</a></li>
-                <li class="nav__item nav__item_width_50 nav__item_xs-width_auto btn btn_color_blue"><a class="nav__link nav__link text text_color_white text_weight_500" href="#submit">Войти</a></li>
+                <li class="nav__item nav__item_style_button nav__item_width_50 nav__item_xs-width_auto btn btn_color_blue"><a class="nav__link flip-panel__back-toggler nav__link text text_color_white text_weight_500" href="#welcome-backflip">На главную</a></li>
+                <li class="nav__item nav__item_style_button nav__item_width_50 nav__item_xs-width_auto btn btn_color_blue"><a class="nav__link nav__link text text_color_white text_weight_500" href="#submit">Войти</a></li>
               </ul>
             </nav>
           </div>
         </form>
       </div>
-      <div class="copyright copyright_color_white page-welcome__copyright"><span class="copyright__chunk copyright__chunk_name">© Владимир Астахов</span><span class="copyright__chunk copyright__chunk_company">Создано с любовью в LoftSchool</span><span class="copyright__chunk copyright__chunk_year">2016</span></div>
+      <div class="copyright copyright_color_white page-welcome__copyright"><span class="copyright__name">© Владимир Астахов</span><span class="copyright__company">Создано с любовью в LoftSchool</span><span class="copyright__year">2016</span></div>
     </div>
   <script type="text/javascript" src="/./js/common.js"></script><script type="text/javascript" src="/./js/index.js"></script></body>
 </html>

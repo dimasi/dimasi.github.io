@@ -236,10 +236,9 @@
   position: relative; }
   .page-header__bg {
     width: 2000px;
-    margin-top: -250px;
     position: absolute;
     z-index: 1;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%); }
   .page-header__bg-video {
@@ -394,7 +393,6 @@
     width: 23.75%;
     margin-right: 100px; }
   .blog__mainbody {
-    box-sizing: border-box;
     width: 56.66667%;
     padding-bottom: 30px; }
   .blog__nav {

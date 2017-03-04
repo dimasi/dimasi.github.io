@@ -49,6 +49,9 @@ table {
   font-family: 'Sansus Webissimo';
   src: url(../fonts/SansusWebissimo.woff) format("woff"), url(../fonts/SansusWebissimo.ttf) format("truetype"); }
 
+* {
+  box-sizing: border-box; }
+
 ::-webkit-input-placeholder {
   color: fff; }
 
@@ -185,10 +188,20 @@ body {
     padding: 10px;
     fill: #fff;
     transition: all 180ms ease-out; }
+    .social__link::after {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
     .social__link:hover {
       fill: #004cd1; }
   .social__icon {
-    display: block; }
+    display: block;
+    position: relative;
+    z-index: 1; }
     .social__icon_vk {
       width: 31px; }
     .social__icon_github {
@@ -238,18 +251,24 @@ body {
 .nav__item_width_50 {
   width: 50%; }
 
+.nav__item_style_button {
+  padding: 0; }
+  .nav__item_style_button .nav__link {
+    display: block;
+    padding: 10px; }
+
 @media screen and (max-width: 767px) {
   .nav__item_xs-width_auto {
     width: auto; } }
 .copyright {
   font-size: 0; }
-  .copyright__chunk {
+  .copyright__name, .copyright__company, .copyright__year {
     font-size: 16px;
     font-weight: 300; }
-    .copyright__chunk_company::before, .copyright__chunk_company::after {
-      content: "|";
-      display: inline-block;
-      padding: 0 4px; }
+  .copyright__company::before, .copyright__company::after {
+    content: "|";
+    display: inline-block;
+    padding: 0 4px; }
 
 .copyright_color_white {
   color: #fff; }
@@ -262,13 +281,12 @@ body {
         flex-wrap: wrap;
     -ms-flex-pack: center;
         justify-content: center;
-    text-align: center; }
-    .copyright__chunk {
-      font-size: 14px; }
-      .copyright__chunk_name {
-        width: 100%; }
-      .copyright__chunk_company::before {
-        display: none; } }
+    text-align: center;
+    font-size: 14px; }
+    .copyright__name {
+      width: 100%; }
+    .copyright__company::before {
+      display: none; } }
 .user {
   display: -ms-flexbox;
   display: flex;
