@@ -2509,7 +2509,7 @@
   background-color: #223b65; }
   .page-welcome__bg-media {
     position: absolute;
-    bottom: 25%;
+    bottom: 10%;
     left: -5%;
     width: 110%; }
   .page-welcome__bg {
@@ -2584,6 +2584,7 @@
 
 @media screen and (max-width: 767px) and (orientation: landscape) {
   .page-welcome {
+    min-height: 100vh;
     height: auto; }
     .page-welcome__sign-in {
       margin-bottom: 15px; }
@@ -2593,11 +2594,10 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-welcome__bg-media {
-    height: 80%;
-    top: 0;
-    bottom: auto;
     min-width: 110%;
-    width: auto; }
+    min-height: 80vh;
+    top: 0;
+    bottom: auto; }
   .page-welcome__bg {
     width: 1400px;
     height: auto;
