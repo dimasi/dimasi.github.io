@@ -2393,6 +2393,7 @@
     -ms-flex-negative: 0;
         flex-shrink: 0;
     width: 45px;
+    height: 45px;
     background-color: #f0efe9; }
   .textfield__addon-icon {
     margin: auto;

@@ -186,6 +186,7 @@ body {
   .social__link {
     display: block;
     padding: 10px;
+    position: relative;
     fill: #fff;
     transition: all 180ms ease-out; }
     .social__link::after {
