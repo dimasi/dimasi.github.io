@@ -242,13 +242,11 @@
     bottom: -45%;
     left: 50%; }
   .page-header__bg-video {
-    width: 2000px;
-    height: 1100px;
+    width: 110%;
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
-    transition: margin-top 100ms; }
+    transform: translateX(-50%); }
   .page-header__bg-user {
     max-width: 460px;
     margin-left: -250px;
@@ -279,6 +277,10 @@
       top: 100vh;
       bottom: auto;
       margin-top: -840px; }
+    .page-header__bg-video {
+      min-width: 100%;
+      width: auto;
+      height: 84vh; }
     .page-header__bg-user {
       width: 281px;
       top: 17.42958vh;
@@ -388,6 +390,9 @@
     bottom: -75%; }
   .page-blog__header {
     height: 410px; }
+    .page-blog__header .page-header__bg-video {
+      top: auto;
+      bottom: -37%; }
   .page-blog__anchor-link {
     display: none; } }
 .blog {
