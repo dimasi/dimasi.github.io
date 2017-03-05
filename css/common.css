@@ -51,6 +51,8 @@ table {
 
 * {
   box-sizing: border-box; }
+  *:focus {
+    outline: 0 none; }
 
 ::-webkit-input-placeholder {
   color: fff; }
@@ -73,7 +75,8 @@ body {
   color: #474b57;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
-  line-height: 24px; }
+  line-height: 24px;
+  position: relative; }
 .text {
   font-size: 16px;
   line-height: 24px; }

@@ -23,11 +23,6 @@
               <use xlink:href="/images/sprite.svg#icon-in-9b632"></use>
             </svg></a></li>
       </ul>
-      <button class="page__hamburger hamburger" type="button">
-        <svg class="hamburger__icon" viewBox="0 0 40 35">
-          <use xlink:href="/images/sprite.svg#icon-hamburger-7d735"></use>
-        </svg>
-      </button>
       <div class="page__content">
         <div class="page__content-wrapper page-blog">
           <div class="page-header page-blog__header">
@@ -67,7 +62,7 @@
               <div class="blog__sidebar">
                 <nav class="nav blog__nav">
                   <ul class="nav__list">
-                    <li class="nav__item nav__item_active"><a class="nav__link" href="#1">Самое важное в SASS</a></li>
+                    <li class="nav__item nav__item_state_active"><a class="nav__link" href="#1">Самое важное в SASS</a></li>
                     <li class="nav__item"><a class="nav__link" href="#2">Приёмы в вёрстке, без которых не обходится ни один сайт</a></li>
                     <li class="nav__item"><a class="nav__link" href="#3">Самый необходимый набор Gulp плагинов</a></li>
                     <li class="nav__item"><a class="nav__link" href="#4">Почему я выбрал Jade</a></li>
@@ -140,6 +135,17 @@
           </div>
         </footer>
       </div>
+    </div>
+    <button class="menu__toggler page__hamburger hamburger" type="button"><span class="hamburger__wrapper"><span class="hamburger__inner"></span></span></button>
+    <div class="menu">
+      <nav class="nav menu__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="portfolio.html">Мои работы</a></li>
+          <li class="nav__item nav__item_state_active"><a class="nav__link" href="blog.html">Блог</a></li>
+          <li class="nav__item"><a class="nav__link" href="about.html">Обо мне</a></li>
+          <li class="nav__item"><a class="nav__link" href="/">Авторизация</a></li>
+        </ul>
+      </nav>
     </div>
   <script type="text/javascript" src="/./js/common.js"></script><script type="text/javascript" src="/./js/blog.js"></script></body>
 </html>
