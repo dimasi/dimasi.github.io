@@ -684,3 +684,89 @@
       font-size: 14px; }
     .article__date {
       font-size: 14px; } }
+.side-menu {
+  width: 285px;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  box-shadow: 3px 0 3px rgba(0, 0, 0, 0.2);
+  transform: translate3d(-285px, 0, 0);
+  transition: transform 180ms linear 180ms; }
+  .side-menu__overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #000;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms; }
+  .side-menu .nav {
+    position: relative;
+    z-index: 3;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    background-color: #253468;
+    padding-left: 10px; }
+  .side-menu .nav__item {
+    margin-bottom: 15px; }
+    .side-menu .nav__item:last-child {
+      margin-bottom: 0; }
+  .side-menu .nav__item_state_active {
+    font-weight: 700; }
+  .side-menu .nav__link {
+    color: #fff; }
+  .side-menu__toggler {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    right: -10px;
+    border-radius: 100%;
+    background-color: #253468;
+    border: 0 none;
+    box-shadow: 3px 0 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 2; }
+    .side-menu__toggler::after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 70px;
+      top: -5px;
+      right: 10px;
+      background-color: #253468;
+      position: absolute;
+      z-index: 1; }
+  .side-menu__page {
+    transition: transform 180ms linear 180ms; }
+
+.side-menu_state_active {
+  transform: translate3d(0, 0, 0);
+  transition: transform 300ms; }
+  .side-menu_state_active .side-menu__overlay {
+    opacity: .5;
+    pointer-events: all;
+    transition: opacity 300ms linear 300ms; }
+
+.side-menu__page_state_side-menu-active {
+  transform: translate3d(285px, 0, 0);
+  transition: transform 300ms; }
+
+@media screen and (min-width: 1200px) {
+  .side-menu {
+    display: none; } }
