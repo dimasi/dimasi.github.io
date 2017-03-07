@@ -38,12 +38,10 @@
             <div class="page-header__user page-blog__user user">
               <div class="user__avatar avatar"><img class="avatar__img" src="/images/user-avatar.jpg"></div>
               <h1 class="user__title heading heading_font_2 heading_transform_uppercase heading_color_white heading_xs-size_35 heading_size_63">Блог</h1>
-              <p class="user__text text text_color_white">Статьи, которые я написал</p>
-              <button class="page-header__anchor-link page-blog__anchor-link btn-arrow" type="button" data-toggle="anchor-link" data-target=".blog">
+              <p class="user__text text text_color_white">Статьи, которые я написал</p><a class="page-header__anchor-link anchor-link btn-arrow" href="#section-blog">
                 <svg class="btn-arrow__icon" viewBox="0 0 42.736 27.435">
                   <use xlink:href="/images/sprite.svg#icon-portf_arrow_down-2878a"></use>
-                </svg>
-              </button>
+                </svg></a>
             </div>
           </div>
           <div class="ribbon page-blog__ribbon">
@@ -58,31 +56,44 @@
               </svg>
             </div>
           </div>
-          <div class="blog page-blog__content">
+          <div class="blog page-blog__content" id="section-blog">
             <div class="blog__wrapper">
               <div class="blog__sidebar">
-                <nav class="nav blog__nav">
+                <nav class="nav blog__nav stick-block">
                   <ul class="nav__list">
-                    <li class="nav__item nav__item_state_active"><a class="nav__link" href="#1">Самое важное в SASS</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#2">Приёмы в вёрстке, без которых не обходится ни один сайт</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#3">Самый необходимый набор Gulp плагинов</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#4">Почему я выбрал Jade</a></li>
+                    <li class="nav__item"><a class="nav__link anchor-link" href="#blog_1">Самое важное в SASS</a></li>
+                    <li class="nav__item"><a class="nav__link anchor-link" href="#blog_2">Приёмы в вёрстке, без которых не обходится ни один сайт</a></li>
+                    <li class="nav__item"><a class="nav__link anchor-link" href="#blog_3">Самый необходимый набор Gulp плагинов</a></li>
+                    <li class="nav__item"><a class="nav__link anchor-link" href="#blog_4">Почему я выбрал Jade</a></li>
                   </ul>
                 </nav>
               </div>
               <div class="blog__mainbody">
-                <div class="article">
+                <div class="article" id="blog_1">
                   <h3 class="article__title">Самое важное в SASS</h3><span class="article__date">22 ноября 2016</span>
                   <div class="article__content">
                     <p class="article__text text">Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.</p>
                     <p class="article__text text">Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p><img src="/images/code-snippet.png">
                   </div>
                 </div>
-                <div class="article">
+                <div class="article" id="blog_2">
                   <h3 class="article__title">Приёмы в вёрстке, без которых не обходится ни один сайт</h3><span class="article__date">13 ноября 2016</span>
                   <div class="article__content">
                     <p class="article__text text">Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.</p>
                     <p class="article__text text">Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
+                  </div>
+                </div>
+                <div class="article" id="blog_3">
+                  <h3 class="article__title">Самый необходимый набор Gulp плагинов</h3><span class="article__date">1 сентября 2016</span>
+                  <div class="article__content">
+                    <p class="article__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at sapien eget purus dignissim cursus. Mauris dignissim imperdiet elementum. Curabitur condimentum eget ex ac aliquam. Aliquam in vehicula augue, sit amet ultrices nulla. Curabitur mollis placerat sem, quis tempor purus congue non. Aliquam pulvinar lorem vitae risus scelerisque, ac maximus nulla facilisis. Vivamus finibus turpis in sem pretium imperdiet nec porttitor nisl. Phasellus rhoncus neque in nisl consequat egestas.</p>
+                    <p class="article__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut neque diam, molestie non tempor nec, molestie quis augue. Duis vitae eros pharetra, pulvinar dolor id, ultricies dolor. Nullam luctus commodo eros, et vehicula leo semper id. Etiam fermentum turpis a vestibulum dignissim. Pellentesque pharetra, ante nec luctus luctus, justo leo cursus ligula, at malesuada nunc arcu a dolor. Mauris volutpat quam et est semper rhoncus. Nulla et ullamcorper lectus, ac ornare magna. Vestibulum sit amet ultricies urna, non venenatis dui. Aliquam tristique velit non tincidunt luctus. Suspendisse et urna eu leo cursus mollis ac sed dui. Cras nec mi tempor, lobortis turpis vel, eleifend purus. Donec a sem eget turpis commodo egestas sit amet ac dui.</p>
+                  </div>
+                </div>
+                <div class="article" id="blog_4">
+                  <h3 class="article__title">Почему я выбрал Jade</h3><span class="article__date">1 сентября 2016</span>
+                  <div class="article__content">
+                    <p class="article__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut neque diam, molestie non tempor nec, molestie quis augue. Duis vitae eros pharetra, pulvinar dolor id, ultricies dolor. Nullam luctus commodo eros, et vehicula leo semper id. Etiam fermentum turpis a vestibulum dignissim. Pellentesque pharetra, ante nec luctus luctus, justo leo cursus ligula, at malesuada nunc arcu a dolor. Mauris volutpat quam et est semper rhoncus. Nulla et ullamcorper lectus, ac ornare magna. Vestibulum sit amet ultricies urna, non venenatis dui. Aliquam tristique velit non tincidunt luctus. Suspendisse et urna eu leo cursus mollis ac sed dui. Cras nec mi tempor, lobortis turpis vel, eleifend purus. Donec a sem eget turpis commodo egestas sit amet ac dui.</p><img class="img img_width_100" src="http://lorempixel.com/1920/1080/abstract/">
                   </div>
                 </div>
               </div>

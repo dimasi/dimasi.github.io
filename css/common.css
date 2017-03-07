@@ -255,9 +255,9 @@ body {
 .nav__item_width_50 {
   width: 50%; }
 
-.nav .nav__item_style_button {
+.nav__item_style_button {
   padding: 0; }
-  .nav .nav__item_style_button .nav__link {
+  .nav__item_style_button .nav__link {
     display: block;
     padding: 10px; }
 

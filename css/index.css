@@ -2529,6 +2529,8 @@
     left: 50%;
     margin-left: -190px;
     z-index: 2; }
+    .page-welcome__flip-panel .nav__link {
+      padding: 0; }
   .page-welcome__sign-in {
     width: 180px;
     height: 40px;
