@@ -38,7 +38,7 @@
             <div class="page-header__user user">
               <div class="user__avatar avatar"><img class="avatar__img" src="/images/user-avatar.jpg"></div>
               <h1 class="user__title heading heading_color_white heading_size_35 heading_xs-size_21 heading_weight_500">Владимир Астахов</h1>
-              <p class="user__text text text_color_white">Личный сайт веб разработчика</p><a class="page-header__anchor-link anchor-link btn-arrow" href="section-works">
+              <p class="user__text text text_color_white">Личный сайт веб разработчика</p><a class="page-header__anchor-link anchor-link btn-arrow" href="#section-works">
                 <svg class="btn-arrow__icon" viewBox="0 0 42.736 27.435">
                   <use xlink:href="/images/sprite.svg#icon-portf_arrow_down-2878a"></use>
                 </svg></a>
@@ -56,7 +56,7 @@
               </svg>
             </div>
           </div>
-          <div class="page-works__content" id="section-works">
+          <div class="page-works__content">
             <div class="page-works__title">
               <div class="page-works__title-bg">
                 <svg class="page-works__title-bg-img" viewBox="0 0 171.5 132.5">
@@ -65,29 +65,54 @@
               </div>
               <h1 class="about__title heading heading_font_2 heading_transform_uppercase heading_size_63 heading_sm-size_49 heading_xs-size_35 heading_color_white">Мои работы</h1>
             </div>
-            <section class="works__slider slider-works">
-              <div class="slider-works__viewport"> <img class="slider-works__current-slide" src="/images/works-current.png"></div>
-              <div class="slider-works__slide-info"> 
-                <h4 class="slider-works__slide-title heading heading_font_2 heading_transform_uppercase heading_size_35 heading_xs-size_21 heading_decor_border-spacer">Сайт школы онлайн образования</h4>
-                <ul class="slider-works__work-features work-features">
+            <div class="section works__slider combo-slider" id="section-works">
+              <ul class="slider-data">
+                <li class="slider-data__item" data-link="#slider-1"><img class="slider-data__img" src="/images/slider-1.jpg">
+                  <h4 class="slider-data__title">Lorem ipsum dolor sit amet</h4>
+                  <ul class="slider-data__features">
+                    <li class="slider-data__feature">nisl</li>
+                    <li class="slider-data__feature">neque</li>
+                    <li class="slider-data__feature">nunc</li>
+                  </ul>
+                </li>
+                <li class="slider-data__item" data-link="#slider-2"><img class="slider-data__img" src="/images/slider-2.jpg">
+                  <h4 class="slider-data__title">Fusce eget augue et augue iaculis</h4>
+                  <ul class="slider-data__features">
+                    <li class="slider-data__feature">quam</li>
+                    <li class="slider-data__feature">risus</li>
+                    <li class="slider-data__feature">mauris</li>
+                  </ul>
+                </li>
+                <li class="slider-data__item" data-link="#slider-3"><img class="slider-data__img" src="/images/slider-3.jpg">
+                  <h4 class="slider-data__title">Integer pharetra ultricies dignissim</h4>
+                  <ul class="slider-data__features">
+                    <li class="slider-data__feature">vel ante</li>
+                    <li class="slider-data__feature">elementum</li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="combo-slider__main-slider carousel"></div>
+              <div class="combo-slider__slide-info"> 
+                <h4 class="combo-slider__slide-title heading heading_font_2 heading_transform_uppercase heading_size_35 heading_xs-size_21 heading_decor_border-spacer">Сайт школы онлайн образования</h4>
+                <ul class="combo-slider__work-features work-features">
                   <li class="work-features__item">HTML</li>
                   <li class="work-features__item">CSS</li>
                   <li class="work-features__item">JAVASCRIPT</li>
-                </ul><a class="btn btn_color_blue" href="#"><i class="btn__icon fa fa-link"></i><span class="btn__text">Посмотреть сайт</span></a>
+                </ul><a class="combo-slider__slide-link btn btn_color_blue" href="#"><span class="btn__text"> <i class="btn__icon fa fa-link"></i>Посмотреть сайт</span></a>
               </div>
-              <div class="slider-works__nav"> 
-                <button class="slider-works__nav-btn slider-works__nav-btn_action_prev" type="button">
-                  <svg class="slider-works__nav-icon btn-arrow__icon" viewBox="0 0 42.736 27.435">
+              <div class="combo-slider__nav"> 
+                <button class="combo-slider__nav-btn combo-slider__nav-btn_slider_prev" type="button">
+                  <svg class="combo-slider__nav-icon btn-arrow__icon" viewBox="0 0 42.736 27.435">
                     <use xlink:href="/images/sprite.svg#icon-portf_arrow_down-2878a"></use>
-                  </svg><img class="slider-works__thumb" src="/images/works-prev.jpg">
+                  </svg><span class="combo-slider__nav-slider carousel"></span>
                 </button>
-                <button class="slider-works__nav-btn slider-works__nav-btn_action_next" type="button">
-                  <svg class="slider-works__nav-icon btn-arrow__icon" viewBox="0 0 42.736 27.435">
+                <button class="combo-slider__nav-btn combo-slider__nav-btn_slider_next" type="button">
+                  <svg class="combo-slider__nav-icon btn-arrow__icon" viewBox="0 0 42.736 27.435">
                     <use xlink:href="/images/sprite.svg#icon-portf_arrow_up-45433"></use>
-                  </svg><img class="slider-works__thumb" src="/images/works-next.jpg">
+                  </svg><span class="combo-slider__nav-slider carousel"></span>
                 </button>
               </div>
-            </section>
+            </div>
             <div class="page-works__bottom">
               <section class="quotes">
                 <div class="quotes__heading-bg">
@@ -122,8 +147,8 @@
                     </div>
                   </div>
                   <div class="form__footer">
-                    <button class="form__btn btn btn_color_blue text text_color_white" type="submit">Отправить</button>
-                    <button class="form__btn btn btn_color_transparent text text_color_white" type="reset">Очистить</button>
+                    <button class="form__btn btn btn_color_blue " type="submit"><span class="btn__text text">Отправить</span></button>
+                    <button class="form__btn btn btn_color_transparent" type="reset"><span class="btn__text text">Очистить</span></button>
                   </div>
                 </form>
               </section><a class="page-works__anchor-to-top anchor-link btn-arrow" href="#page-top">

@@ -2338,13 +2338,14 @@
 .btn {
   background-color: transparent;
   border: 0 none;
-  padding: 10px;
   border: 1px solid transparent;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   transition: border-color 180ms ease-out, background-color 180ms ease-out; }
   .btn__text {
+    display: block;
+    padding: 10px;
     font-size: 16px;
     text-decoration: none;
     transition: color 180ms ease-out; }
@@ -2379,7 +2380,7 @@
   width: 100%; }
 
 @media screen and (max-width: 767px) {
-  .btn_xs-size_small {
+  .btn_xs-size_small .btn__text {
     padding: 7px; } }
 .textfield {
   display: -ms-flexbox;
@@ -2529,11 +2530,9 @@
     left: 50%;
     margin-left: -190px;
     z-index: 2; }
-    .page-welcome__flip-panel .nav__link {
-      padding: 0; }
   .page-welcome__sign-in {
     width: 180px;
-    height: 40px;
+    min-height: 40px;
     position: absolute;
     top: 25px;
     right: 20px;
