@@ -139,22 +139,25 @@
                 </ul>
               </section>
               <section class="page-works__feedback">
-                <form class="form form_theme_transparent">
+                <form class="form form_theme_transparent" name="contact" novalidate autocomplete="off">
                   <div class="form__body">
                     <h4 class="form__title heading heading_font_2 heading_transform_uppercase heading_size_35 heading_xs-size_21 heading_decor_border-spacer">Связаться со мной</h4>
-                    <div class="form__field textfield">
-                      <input class="textfield__control" type="text" name="name" placeholder="Ваше имя">
-                    </div>
-                    <div class="form__field textfield">
-                      <input class="textfield__control" type="email" name="name" placeholder="Ваш email">
-                    </div>
-                    <div class="form__field textarea">
-                      <textarea class="textarea__control" placeholder="Ваше сообщение"></textarea>
-                    </div>
+                    <label class="form__field textfield formfield"><span class="textfield__wrapper">
+                        <input class="textfield__control formfield__control" type="text" name="name" placeholder="Ваше имя"><span class="textfield__error-message formfield__error-message"></span></span></label>
+                    <label class="form__field textfield formfield"><span class="textfield__wrapper">
+                        <input class="textfield__control formfield__control" type="email" name="email" placeholder="Ваш email"><span class="textfield__error-message formfield__error-message"></span></span></label>
+                    <label class="form__field textarea formfield"><span class="textarea__wrapper">
+                        <textarea class="textarea__control formfield__control" name="message" placeholder="Ваше сообщение"></textarea><span class="textarea__error-message formfield__error-message"></span></span></label>
                   </div>
                   <div class="form__footer">
                     <button class="form__btn btn btn_color_blue " type="submit"><span class="btn__text text">Отправить</span></button>
                     <button class="form__btn btn btn_color_transparent" type="reset"><span class="btn__text text">Очистить</span></button>
+                  </div>
+                  <div class="form-message">
+                    <div class="form-message__body">
+                      <div class="form-message__text text text_opacity_80"></div>
+                      <button class="form-message__close btn btn_color_blue btn_size_small btn_corners_rounded" type="button"><span class="btn__text text text_opacity_80">Закрыть</span></button>
+                    </div>
                   </div>
                 </form>
               </section><a class="page-works__anchor-to-top anchor-link btn-arrow" href="#page-top">
@@ -175,10 +178,14 @@
               <div class="footer__nav">
                         <nav class="nav">
                           <ul class="nav__list">
-                                    <li class="nav__item"><a class="nav__link" href="portfolio.html">Мои работы</a></li>
-                                    <li class="nav__item"><a class="nav__link" href="about.html">Обо мне</a></li>
-                                    <li class="nav__item"><a class="nav__link" href="blog.html">Блог</a></li>
-                                    <li class="nav__item"><a class="nav__link" href="/">Авторизация</a></li>
+                                    <li class="nav__item"><a class="nav__link" href="portfolio.html">Мои работы</a>
+                                    </li>
+                                    <li class="nav__item"><a class="nav__link" href="about.html">Обо мне</a>
+                                    </li>
+                                    <li class="nav__item"><a class="nav__link" href="blog.html">Блог</a>
+                                    </li>
+                                    <li class="nav__item"><a class="nav__link" href="/">Авторизация</a>
+                                    </li>
                           </ul>
                         </nav>
                         <ul class="social">
@@ -215,10 +222,14 @@
     <div class="menu">
       <nav class="nav menu__nav">
         <ul class="nav__list">
-          <li class="nav__item nav__item_state_active"><a class="nav__link" href="portfolio.html">Мои работы</a></li>
-          <li class="nav__item"><a class="nav__link" href="blog.html">Блог</a></li>
-          <li class="nav__item"><a class="nav__link" href="about.html">Обо мне</a></li>
-          <li class="nav__item"><a class="nav__link" href="/">Авторизация</a></li>
+          <li class="nav__item nav__item_state_active"><a class="nav__link" href="portfolio.html">Мои работы</a>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="blog.html">Блог</a>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="about.html">Обо мне</a>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="/">Авторизация</a>
+          </li>
         </ul>
       </nav>
     </div>

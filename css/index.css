@@ -2369,8 +2369,16 @@
   .btn_color_transparent:hover {
     color: white; }
 
+.btn_size_small {
+  padding: 0 6px; }
+  .btn_size_small .btn__text {
+    line-height: 18px; }
+
 .btn_border_white {
   border-color: #fff; }
+
+.btn_corners_rounded {
+  border-radius: 4px; }
 
 .btn_hover-bg_blue:hover {
   border-color: #083c96;
@@ -2386,6 +2394,12 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%; }
+  .textfield__wrapper {
+    position: relative;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
   .textfield__addon {
     display: -ms-flexbox;
     display: flex;
@@ -2401,10 +2415,7 @@
     color: #c4cbcd;
     font-size: 18px; }
   .textfield__control {
-    -ms-flex-positive: 1;
-        flex-grow: 1;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+    width: 100%;
     height: 45px;
     line-height: 45px;
     padding: 0 15px;
@@ -2415,6 +2426,117 @@
     font-size: 16px; }
     .textfield__control:focus {
       outline: 0 none; }
+
+.textfield.formfield_state_error .textfield__addon-icon {
+  color: #e44845; }
+
+.textfield.formfield_state_error .textfield__control {
+  outline: 1px solid #e44845; }
+
+.textfield.formfield_state_error .textfield__error-message {
+  padding: 10px 20px;
+  margin-top: 13px;
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: 0;
+  border-radius: 4px;
+  background-color: #e44845;
+  color: #fff;
+  font-weight: 500; }
+  .textfield.formfield_state_error .textfield__error-message::before, .textfield.formfield_state_error .textfield__error-message::after {
+    content: "";
+    display: block;
+    position: absolute; }
+  .textfield.formfield_state_error .textfield__error-message::before {
+    width: 10px;
+    height: 10px;
+    top: -4px;
+    right: 50%;
+    margin-right: -5px;
+    background-color: #e44845;
+    transform: rotate(-45deg); }
+  .textfield.formfield_state_error .textfield__error-message::after {
+    content: "";
+    width: 20px;
+    height: 13px;
+    top: 0;
+    right: 50%;
+    margin-right: -10px;
+    background-color: #e44845; }
+
+.textfield.formfield_state_correct .textfield__addon-icon {
+  color: #0548be; }
+.formfield_state_error .formfield__control {
+  outline: 1px solid #e44845; }
+
+.formfield_state_error .formfield__error-message {
+  padding: 10px 20px;
+  margin-top: 13px;
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: 0;
+  border-radius: 4px;
+  background-color: #e44845;
+  color: #fff;
+  font-weight: 500; }
+  .formfield_state_error .formfield__error-message::before, .formfield_state_error .formfield__error-message::after {
+    content: "";
+    display: block;
+    position: absolute; }
+  .formfield_state_error .formfield__error-message::before {
+    width: 10px;
+    height: 10px;
+    top: -4px;
+    right: 50%;
+    margin-right: -5px;
+    background-color: #e44845;
+    transform: rotate(-45deg); }
+  .formfield_state_error .formfield__error-message::after {
+    content: "";
+    width: 20px;
+    height: 13px;
+    top: 0;
+    right: 50%;
+    margin-right: -10px;
+    background-color: #e44845; }
+
+.textfield.formfield_state_error .textfield__addon-icon {
+  color: #e44845; }
+
+.textfield.formfield_state_correct .textfield__addon-icon {
+  color: #0548be; }
+.form-message {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .form-message__body {
+    width: 280px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 14px 20px 20px;
+    -ms-flex-align: center;
+        align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; }
+  .form-message__text {
+    margin-bottom: 14px; }
+
+.form-message_state_error .form-message__body {
+  color: #e44845; }
 .checkbox {
   display: -ms-flexbox;
   display: flex; }

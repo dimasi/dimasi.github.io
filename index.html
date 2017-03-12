@@ -51,48 +51,52 @@
             </div>
             <nav class="nav flip-panel__footer nav_layout_inline nav_spacers_white">
               <ul class="nav__list">
-                <li class="nav__item nav__item_style_button btn btn_color_blue"><a class="nav__link nav__link btn__text text text_weight_500" href="portfolio.html">Мои работы</a></li>
-                <li class="nav__item nav__item_style_button btn btn_color_blue"><a class="nav__link nav__link btn__text text text_weight_500" href="about.html">Обо мне</a></li>
-                <li class="nav__item nav__item_style_button btn btn_color_blue"><a class="nav__link nav__link btn__text text text_weight_500" href="blog.html">Блог</a></li>
+                <li class="nav__item nav__item_style_button btn btn_color_blue"><a class="nav__link nav__link btn__text text text_weight_500" href="portfolio.html">Мои работы</a>
+                </li>
+                <li class="nav__item nav__item_style_button btn btn_color_blue"><a class="nav__link nav__link btn__text text text_weight_500" href="about.html">Обо мне</a>
+                </li>
+                <li class="nav__item nav__item_style_button btn btn_color_blue"><a class="nav__link nav__link btn__text text text_weight_500" href="blog.html">Блог</a>
+                </li>
               </ul>
             </nav>
           </div>
         </div>
-        <form class="flip-panel__side flip-panel__side_side_back">
+        <form class="flip-panel__side flip-panel__side_side_back" name="auth" novalidate>
           <div class="flip-panel__content">
             <div class="flip-panel__body login"><span class="login__title heading heading_font_2 heading_size_35 heading_color_white heading_transform_uppercase">Авторизуйтесь</span>
-              <label class="login__login textfield"><span class="textfield__addon"><i class="textfield__addon-icon fa fa-user"></i></span>
-                <input class="textfield__control" type="text" name="login" placeholder="Логин">
-              </label>
-              <label class="login__pwd textfield"><span class="textfield__addon"><i class="textfield__addon-icon fa fa-key"></i></span>
-                <input class="textfield__control" type="password" name="pwd" placeholder="Пароль">
-              </label>
+              <label class="login__login textfield formfield"><span class="textfield__addon"><i class="textfield__addon-icon fa fa-user"></i></span><span class="textfield__wrapper">
+                  <input class="textfield__control formfield__control" type="text" name="username" placeholder="Логин"><span class="textfield__error-message formfield__error-message"></span></span></label>
+              <label class="login__pwd textfield formfield"><span class="textfield__addon"><i class="textfield__addon-icon fa fa-key"></i></span><span class="textfield__wrapper">
+                  <input class="textfield__control formfield__control" type="password" name="password" placeholder="Пароль"><span class="textfield__error-message formfield__error-message"></span></span></label>
               <div class="form-guard">
                 <label class="form-guard__checkbox checkbox">
-                  <input class="checkbox__control" type="checkbox" name="antibot">
-                  <div class="checkbox__pseudo-control fa fa-check"></div>
-                  <div class="checkbox__label text text_color_white">Я человек</div>
+                  <input class="checkbox__control" type="checkbox" name="antibot"><span class="checkbox__pseudo-control fa fa-check"></span><span class="checkbox__label text text_color_white">Я человек</span>
                 </label>
                 <div class="form-guard__radio radio-group"><span class="radio-group__title radio-group__title_align_center text text_color_white">Вы точно не робот?</span>
                   <div class="radio-group__wrapper">
                     <label class="radio-group__item radio">
-                      <input class="radio__control" type="radio" name="antibot2">
-                      <div class="radio__pseudo-control"></div>
-                      <div class="radio__label text text_color_white">Да</div>
+                      <input class="radio__control" type="radio" name="antibot2" value="1"><span class="radio__pseudo-control"></span><span class="radio__label text text_color_white">Да</span>
                     </label>
                     <label class="radio-group__item radio">
-                      <input class="radio__control" type="radio" name="antibot2">
-                      <div class="radio__pseudo-control"></div>
-                      <div class="radio__label text text_color_white">Не уверен</div>
+                      <input class="radio__control" type="radio" name="antibot2" value="2"><span class="radio__pseudo-control"></span><span class="radio__label text text_color_white">Не уверен</span>
                     </label>
                   </div>
+                </div>
+              </div>
+              <div class="form-message">
+                <div class="form-message__body">
+                  <div class="form-message__text text text_opacity_80"></div>
+                  <button class="form-message__close btn btn_color_blue btn_size_small btn_corners_rounded" type="button"><span class="btn__text text text_opacity_80">Закрыть</span></button>
                 </div>
               </div>
             </div>
             <nav class="nav flip-panel__footer nav_layout_inline nav_spacers_white">
               <ul class="nav__list">
-                <li class="nav__item nav__item_style_button nav__item_width_50 nav__item_xs-width_auto btn btn_color_blue"><a class="nav__link flip-panel__back-toggler nav__link btn__text text text_weight_500" href="#welcome-backflip">На главную</a></li>
-                <li class="nav__item nav__item_style_button nav__item_width_50 nav__item_xs-width_auto btn btn_color_blue"><a class="nav__link nav__link btn__text text text_weight_500" href="#submit">Войти</a></li>
+                <li class="nav__item nav__item_style_button nav__item_width_50 nav__item_xs-width_auto btn btn_color_blue"><a class="nav__link flip-panel__back-toggler nav__link btn__text text text_weight_500" href="#welcome-backflip">На главную</a>
+                </li>
+                <li class="nav__item nav__item_style_button nav__item_width_50 nav__item_xs-width_auto btn btn_color_blue">
+                  <button class="nav__link nav__link btn__text text text_weight_500" type="submit">Войти</button>
+                </li>
               </ul>
             </nav>
           </div>

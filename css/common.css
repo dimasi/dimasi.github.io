@@ -171,6 +171,9 @@ body {
 .text_weight_700 {
   font-weight: 500; }
 
+.text_opacity_80 {
+  opacity: .8; }
+
 .text_style_italic {
   font-style: italic; }
 
@@ -337,7 +340,14 @@ body {
   padding: 0; }
   .nav__item_style_button .nav__link {
     display: block;
-    padding: 10px; }
+    width: 100%;
+    padding: 10px;
+    border: 0 none;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer; }
 
 @media screen and (max-width: 767px) {
   .nav__item_xs-width_auto {
