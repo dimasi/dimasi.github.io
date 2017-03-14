@@ -243,7 +243,7 @@
     -ms-flex-negative: 0;
         flex-shrink: 0;
     position: relative;
-    z-index: 1; }
+    z-index: 11; }
 
 @media screen and (max-width: 767px) {
   .page__social {
@@ -599,6 +599,7 @@
   display: -ms-flexbox;
   display: flex;
   padding-top: 20px;
+  padding-bottom: 20px;
   position: relative;
   z-index: 3; }
   .about__info, .about__skills {
@@ -666,7 +667,8 @@
         flex-direction: column;
     -ms-flex-pack: center;
         justify-content: center;
-    padding-top: 45px; }
+    padding-top: 45px;
+    padding-bottom: 0; }
     .about__info {
       width: 100%;
       padding-bottom: 15px; }
@@ -677,7 +679,8 @@
     .about__skills {
       width: 100%;
       background-color: #f4f5f0;
-      padding-top: 35px; }
+      padding-top: 35px;
+      padding-bottom: 20px; }
     .about__indicators {
       -ms-flex-align: center;
           align-items: center;
@@ -783,21 +786,27 @@
   -ms-flex-align: center;
       align-items: center;
   height: 100vh;
-  padding-bottom: 185px;
   margin-bottom: -185px;
-  position: relative; }
+  position: relative;
+  z-index: 10; }
   .map__container {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
-    background-size: cover;
-    background: url(../images/map.png); }
+    left: 0; }
+  .map__map {
+    width: 2000px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); }
   .map__title {
     text-align: center; }
   .map__contacts {
     width: 580px;
+    margin-top: -185px;
     padding: 30px 20px 0;
     background-color: rgba(255, 255, 255, 0.7);
     position: relative;
@@ -818,6 +827,10 @@
           align-items: baseline;
       text-decoration: none; }
     .map__contacts-list .contacts__icon {
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
       fill: #004cd1;
       width: 45px;
       height: 45px;
@@ -856,11 +869,15 @@
         top: -14px; }
     .map__container {
       height: 515px;
-      position: static; } }
+      position: static; }
+    .map__map {
+      margin-left: -350px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .map {
     margin-bottom: -270px; }
+    .map__container {
+      margin-left: -150px; }
     .map__contacts {
       width: 348px;
       padding-bottom: 20px; }
