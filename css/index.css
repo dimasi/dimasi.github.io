@@ -2388,8 +2388,16 @@
   width: 100%; }
 
 @media screen and (max-width: 767px) {
-  .btn_xs-size_small .btn__text {
-    padding: 7px; } }
+  .btn__text {
+    padding: 8px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .btn__text {
+    padding: 8px; } }
+
+@media screen and (min-width: 1200px) and (max-width: 1799px) {
+  .btn__text {
+    padding: 9px; } }
 .textfield {
   display: -ms-flexbox;
   display: flex;
@@ -2426,6 +2434,14 @@
     font-size: 16px; }
     .textfield__control:focus {
       outline: 0 none; }
+  .textfield ::-webkit-input-placeholder {
+    color: rgba(55, 62, 66, 0.5); }
+  .textfield ::-moz-placeholder {
+    color: rgba(55, 62, 66, 0.5); }
+  .textfield :-moz-placeholder {
+    color: rgba(55, 62, 66, 0.5); }
+  .textfield :-ms-input-placeholder {
+    color: rgba(55, 62, 66, 0.5); }
 
 .textfield.formfield_state_error .textfield__addon-icon {
   color: #e44845; }
@@ -2467,6 +2483,31 @@
 
 .textfield.formfield_state_correct .textfield__addon-icon {
   color: #0548be; }
+
+.textfield_color_white .textfield__control {
+  color: #fff; }
+
+.textfield_color_white ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5); }
+
+.textfield_color_white ::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5); }
+
+.textfield_color_white :-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5); }
+
+.textfield_color_white :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5); }
+
+@media screen and (max-width: 767px) {
+  .textfield__control {
+    height: 40px;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 40px; }
+  .textfield__addon {
+    width: 40px;
+    height: 40px; } }
 .formfield_state_error .formfield__control {
   outline: 1px solid #e44845; }
 
@@ -2808,7 +2849,7 @@
   .login__title {
     margin-bottom: 35px; }
   .login__login .textfield__control, .login__pwd .textfield__control {
-    width: 215px; } }
+    width: 220px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .login__title {

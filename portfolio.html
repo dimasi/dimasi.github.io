@@ -119,8 +119,9 @@
                 <button class="combo-slider__nav-btn combo-slider__nav-btn_slider_next" type="button"><span class="combo-slider__nav-icon icomoon-icon-portf-arrow-up"></span><span class="combo-slider__nav-slider carousel"></span></button>
               </div>
             </div>
-            <div class="page-works__bottom">
-              <section class="quotes">
+            <div class="page-works__blur-bg blur">
+              <div class="blur__bg"><img class="blur__img" src="/images/works-bg.jpg" alt=""></div>
+              <section class="page-works__quotes quotes">
                 <div class="quotes__heading-bg">
                   <svg class="quotes__heading-bg-img" viewBox="0 0 103.03 124.03">
                     <use xlink:href="/images/sprite.svg#icon-stars3-ac45e"></use>
@@ -134,36 +135,40 @@
                   </li>
                   <li class="quotes__item quote text text_color_white text_style_italic">
                     <div class="quote__img avatar avatar_size_small"><img class="avatar__img" src="/images/quote-user2.png"></div>
-                    <div class="quote__text">Этот код выдержеит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div><span class="quote__author text text_weight_700">Сабанцев Владимир</span><span class="quote__author-detail">— преподаватель</span>
+                    <div class="quote__text">Этот код выдержеит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!</div><span class="quote__author text text_weight_700">Сабанцев Владимир</span><span class="quote__author-detail">— преподаватель</span>
                   </li>
                 </ul>
               </section>
-              <section class="page-works__feedback">
-                <form class="form form_theme_transparent" name="contact" novalidate autocomplete="off">
-                  <div class="form__body">
-                    <h4 class="form__title heading heading_font_2 heading_transform_uppercase heading_size_35 heading_xs-size_21 heading_decor_border-spacer">Связаться со мной</h4>
-                    <label class="form__field textfield formfield"><span class="textfield__wrapper">
-                        <input class="textfield__control formfield__control" type="text" name="name" placeholder="Ваше имя"><span class="textfield__error-message formfield__error-message"></span></span></label>
-                    <label class="form__field textfield formfield"><span class="textfield__wrapper">
-                        <input class="textfield__control formfield__control" type="email" name="email" placeholder="Ваш email"><span class="textfield__error-message formfield__error-message"></span></span></label>
-                    <label class="form__field textarea formfield"><span class="textarea__wrapper">
-                        <textarea class="textarea__control formfield__control" name="message" placeholder="Ваше сообщение"></textarea><span class="textarea__error-message formfield__error-message"></span></span></label>
-                  </div>
-                  <div class="form__footer">
-                    <button class="form__btn btn btn_color_blue " type="submit"><span class="btn__text text">Отправить</span></button>
-                    <button class="form__btn btn btn_color_transparent" type="reset"><span class="btn__text text">Очистить</span></button>
-                  </div>
-                  <div class="form-message">
-                    <div class="form-message__body">
-                      <div class="form-message__text text text_opacity_80"></div>
-                      <button class="form-message__close btn btn_color_blue btn_size_small btn_corners_rounded" type="button"><span class="btn__text text text_opacity_80">Закрыть</span></button>
+              <section class="page-works__contact">
+                <div class="blur__panel-wrapper">
+                  <div class="blur__panel"></div>
+                  <form class="form form_theme_transparent" name="contact" novalidate autocomplete="off">
+                    <div class="form__body">
+                      <h4 class="form__title heading heading_font_2 heading_transform_uppercase heading_size_35 heading_sm-size_30 heading_xs-size_21 heading_decor_border-spacer">Связаться со мной</h4>
+                      <label class="form__field textfield textfield_color_white formfield"><span class="textfield__wrapper">
+                          <input class="textfield__control textfield__control_color_white formfield__control" type="text" name="name" placeholder="Ваше имя"><span class="textfield__error-message formfield__error-message"></span></span></label>
+                      <label class="form__field textfield textfield_color_white formfield"><span class="textfield__wrapper">
+                          <input class="textfield__control formfield__control" type="email" name="email" placeholder="Ваш email"><span class="textfield__error-message formfield__error-message"></span></span></label>
+                      <label class="form__field textarea textarea_color_white formfield"><span class="textarea__wrapper">
+                          <textarea class="textarea__control formfield__control" name="message" placeholder="Ваше сообщение"></textarea><span class="textarea__error-message formfield__error-message"></span></span></label>
                     </div>
-                  </div>
-                </form>
-              </section><a class="page-works__anchor-to-top anchor-link btn-arrow" href="#page-top">
-                <svg class="btn-arrow__icon" viewBox="0 0 42.736 27.435">
-                  <use xlink:href="/images/sprite.svg#icon-portf_arrow_up-45433"></use>
-                </svg></a>
+                    <div class="form__footer">
+                      <button class="form__btn btn btn_color_blue " type="submit"><span class="btn__text text text_weight_500">Отправить</span></button>
+                      <button class="form__btn btn btn_color_transparent" type="reset"><span class="btn__text text">Очистить</span></button>
+                    </div>
+                    <div class="form-message">
+                      <div class="form-message__body">
+                        <div class="form-message__text text text_opacity_80"></div>
+                        <button class="form-message__close btn btn_color_blue btn_size_small btn_corners_rounded" type="button"><span class="btn__text text text_opacity_80">Закрыть</span></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </section>
+              <div class="page-works__to-top"><a class="anchor-link btn-arrow" href="#page-top">
+                  <svg class="btn-arrow__icon" viewBox="0 0 42.736 27.435">
+                    <use xlink:href="/images/sprite.svg#icon-portf_arrow_up-45433"></use>
+                  </svg></a></div>
             </div>
           </div>
         </div>
