@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;amp;subset=cyrillic" rel="stylesheet">
+    <title>Admin page
+    </title>
+  <link rel="apple-touch-icon" sizes="57x57" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="project"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="project"><link rel="icon" type="image/png" sizes="32x32" href="/icons-513fb071908cfb53e8bef691fe8c12b0/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/icons-513fb071908cfb53e8bef691fe8c12b0/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="16x16" href="/icons-513fb071908cfb53e8bef691fe8c12b0/favicon-16x16.png"><link rel="shortcut icon" href="/icons-513fb071908cfb53e8bef691fe8c12b0/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/icons-513fb071908cfb53e8bef691fe8c12b0/apple-touch-startup-image-1536x2008.png"><link href="/./css/common.css" rel="stylesheet"><link href="/./css/admin.css" rel="stylesheet"></head>
+  <body>
+<div class="preloader" style="
+    background: url(/images/preloader-bg.jpg) #163262 no-repeat center; 
+    background-size: cover; 
+    position: fixed; 
+    z-index: 10000; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0;">
+  <div class="preloader__spinner" style="display: none;">
+    <div class="preloader__animation"></div>
+    <div class="preloader__percents">0%</div>
+  </div>
+</div>
+    <div class="page-admin">
+      <div class="page-admin__bg"></div>
+      <div class="page-admin__tabs tabs">
+        <header class="page-admin__header">
+          <div class="page-admin__header-wrapper">
+            <h1 class="page-admin__title heading text text_size_28 text_xs-size_21 text_sm-size_21 text_wight_500">Панель администрирования</h1><a class="page-admin__to-site-link link text" href="about.html">Вернуться на сайт</a>
+          </div>
+          <nav class="nav page-admin__header-tabs tabs__nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link nav__link_state_active" href="#about">Обо мне</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="#works">Портфолио</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="#blog">Блог</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="page-admin__body tabs__content">
+          <section class="tabs__tab tabs__tab_state_active page-admin-section" id="about">
+            <form class="page-admin-section__body page-admin-section__body_section_skills" action="/admin/about">
+              <h4 class="page-admin-section__title text text_size_21 text_xs-size_21 text_weight_700">Навыки</h4>
+              <div class="page-admin-section__center grid-layout">
+                <div class="grid-layout__row">
+                  <div class="grid-layout__item grid-layout__item_size_6 grid-layout__item_sm-size_12 grid-layout__item_xs-size_12">
+                    <div class="grid-layout__row">
+                      <fieldset class="page-admin-section__fieldset grid-layout__item grid-layout__item_size_6 grid-layout__item_sm-lnd-size_4 grid-layout__item_xs-size_12">
+                        <legend class="page-admin-section__group-title text text_weight_500">Frontend</legend>
+                        <div class="page-admin-section__textfield textfield textfield_bg_white textfield_size_small">
+                          <label class="textfield__label">Html</label>
+                          <input class="textfield__control textfield__control_corners_rounded" type="text" value="90"><span class="textfield__measure">%</span>
+                        </div>
+                        <div class="page-admin-section__textfield textfield textfield_bg_white textfield_size_small">
+                          <label class="textfield__label">CSS</label>
+                          <input class="textfield__control textfield__control_corners_rounded" type="text" value="88"><span class="textfield__measure">%</span>
+                        </div>
+                        <div class="page-admin-section__textfield textfield textfield_bg_white textfield_size_small">
+                          <label class="textfield__label">JavaScript</label>
+                          <input class="textfield__control textfield__control_corners_rounded" type="text" value="75"><span class="textfield__measure">%</span>
+                        </div>
+                      </fieldset>
+                      <fieldset class="page-admin-section__fieldset grid-layout__item grid-layout__item_size_6 grid-layout__item_sm-lnd-size_4 grid-layout__item_xs-size_12">
+                        <legend class="page-admin-section__group-title text text_weight_500">Backend</legend>
+                        <div class="page-admin-section__textfield textfield textfield_bg_white textfield_size_small">
+                          <label class="textfield__label">PHP</label>
+                          <input class="textfield__control textfield__control_corners_rounded" type="text" value="35"><span class="textfield__measure">%</span>
+                        </div>
+                        <div class="page-admin-section__textfield textfield textfield_bg_white textfield_size_small">
+                          <label class="textfield__label">Node.js</label>
+                          <input class="textfield__control textfield__control_corners_rounded" type="text" value="30"><span class="textfield__measure">%</span>
+                        </div>
+                        <div class="page-admin-section__textfield textfield textfield_bg_white textfield_size_small">
+                          <label class="textfield__label">Mongo.db</label>
+                          <input class="textfield__control textfield__control_corners_rounded" type="text" value="30"><span class="textfield__measure">%</span>
+                        </div>
+                      </fieldset>
+                      <fieldset class="page-admin-section__fieldset grid-layout__item grid-layout__item_size_6 grid-layout__item_sm-lnd-size_4 grid-layout__item_xs-size_12">
+                        <legend class="page-admin-section__group-title text text_weight_500">Workflow</legend>
+                        <div class="page-admin-section__textfield textfield textfield_bg_white textfield_size_small">
+                          <label class="textfield__label">Webpack</label>
+                          <input class="textfield__control textfield__control_corners_rounded" type="text" value="60"><span class="textfield__measure">%</span>
+                        </div>
+                        <div class="page-admin-section__textfield textfield textfield_bg_white textfield_size_small">
+                          <label class="textfield__label">Gulp</label>
+                          <input class="textfield__control textfield__control_corners_rounded" type="text" value="30"><span class="textfield__measure">%</span>
+                        </div>
+                        <div class="page-admin-section__textfield textfield textfield_bg_white textfield_size_small">
+                          <label class="textfield__label">Grunt</label>
+                          <input class="textfield__control textfield__control_corners_rounded" type="text" value="70"><span class="textfield__measure">%</span>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <footer class="page-admin-section__footer">
+                <button class="btn btn_corners_rounded btn_color_blue" type="submit"><span class="btn__text text text_color_white text_weight_500">Сохранить</span></button>
+              </footer>
+            </form>
+          </section>
+          <section class="tabs__tab page-admin-section" id="works">
+            <form class="page-admin-section__body page-admin-section__body_section_works" action="/admin/works">
+              <h4 class="page-admin-section__title text text_size_21 text_xs-size_21 text_weight_700">Мои работы</h4>
+              <div class="page-admin-section__center grid-layout">
+                <div class="grid-layout__row">
+                  <fieldset class="page-admin-section__fieldset grid-layout__item grid-layout__item_size_4 grid-layout__item_sm-size_6 grid-layout__item_xs-size_12">
+                    <legend class="page-admin-section__group-title text text_weight_500">Добавить работу</legend>
+                    <div class="page-admin-section__textfield textfield textfield_bg_white"><span class="textfield__wrapper">
+                        <input class="textfield__control textfield__control_corners_rounded formfield__control" type="text" name="project-name" placeholder="Название проекта"><span class="textfield__error-message formfield__error-message"></span></span></div>
+                    <div class="page-admin-section__textfield textfield textfield_bg_white"><span class="textfield__wrapper">
+                        <input class="textfield__control textfield__control_corners_rounded formfield__control" type="text" name="tech" placeholder="Технологии"><span class="textfield__error-message formfield__error-message"></span></span></div>
+                    <div class="page-admin-section__textfield filefield">
+                      <label class="filefield__label"><span class="filefield__icon"><i class="fa fa-picture-o"></i><i class="fa fa-plus-circle"></i></span><span class="filefield__text">Загрузить картинку</span>
+                        <input class="filefield__control" type="file">
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+              <footer class="page-admin-section__footer">
+                <button class="btn btn_corners_rounded btn_color_blue" type="submit"><span class="btn__text text text_color_white text_weight_500">Добавить</span></button>
+              </footer>
+            </form>
+          </section>
+          <section class="tabs__tab page-admin-section" id="blog">
+            <form class="page-admin-section__body page-admin-section__body_section_blog" action="/admin/blog">
+              <h4 class="page-admin-section__title text text_size_21 text_xs-size_21 text_weight_700">Блог</h4>
+              <div class="page-admin-section__center grid-layout">
+                <div class="grid-layout__row">
+                  <fieldset class="page-admin-section__fieldset grid-layout__item grid-layout__item_size_6 grid-layout__item_sm-size_9 grid-layout__item_xs-size_12">
+                    <legend class="page-admin-section__group-title text text_weight_500">Добавить запись</legend>
+                    <div class="grid-layout__row">
+                      <div class="grid-layout__item grid-layout__item_size_8 grid-layout__item_sm-size_10 grid-layout__item_xs-size_12">
+                        <div class="page-admin-section__textfield textfield textfield_bg_white"><span class="textfield__wrapper">
+                            <input class="textfield__control textfield__control_corners_rounded formfield__control" type="text" name="name" placeholder="Название"><span class="textfield__error-message formfield__error-message"></span></span></div>
+                        <div class="page-admin-section__textfield textfield textfield_bg_white"><span class="textfield__wrapper">
+                            <input class="textfield__control textfield__control_corners_rounded formfield__control" type="text" name="date" placeholder="Дата"><span class="textfield__error-message formfield__error-message"></span></span></div>
+                      </div>
+                    </div>
+                    <div class="page-admin-section__textarea textarea formfield"><span class="textarea__wrapper">
+                        <textarea class="textarea__control textarea__control_corners_rounded formfield__control" name="content">Содержание</textarea><span class="textarea__error-message formfield__error-message"></span></span></div>
+                  </fieldset>
+                </div>
+              </div>
+              <footer class="page-admin-section__footer">
+                <button class="btn btn_corners_rounded btn_color_blue" type="submit"><span class="btn__text text text_color_white text_weight_500">Добавить</span></button>
+              </footer>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="/./js/common.js"></script><script type="text/javascript" src="/./js/admin.js"></script></body>
+</html>
